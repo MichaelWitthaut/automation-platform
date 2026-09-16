@@ -36,7 +36,7 @@ jobs:
       - name: Build Application
         run: npm run build
 
-      - name: Upload GitHub Pages Artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
