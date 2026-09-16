@@ -1,0 +1,23 @@
+:root { font-family: 'IBM Plex Sans', Arial, sans-serif; color: #161616; background: #f4f4f4; }
+body { margin: 0; }
+.app-shell { padding-top: 3rem; min-height: 100vh; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 34rem); gap: 2rem; align-items: end; padding: 2rem; background: #fff; border-bottom: 1px solid #c6c6c6; }
+.hero h1 { font-size: clamp(2rem, 4vw, 4rem); font-weight: 300; line-height: 1.05; margin: .5rem 0 1rem; max-width: 15ch; }
+.hero p { max-width: 58rem; }
+.eyebrow, .architecture-node__eyebrow { color: #0f62fe; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 .5rem; }
+.canvas-wrap { position: relative; height: calc(100vh - 17rem); min-height: 580px; background: #fff; }
+.architecture-node { width: 16rem; min-height: 8.5rem; box-sizing: border-box; padding: 1rem; background: #fff; border-top: 4px solid var(--accent); box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: opacity .25s, transform .25s, box-shadow .25s; }
+.architecture-node h3 { margin: .25rem 0 .75rem; font-size: 1.25rem; }
+.architecture-node p { margin: 0 0 .75rem; color: #525252; line-height: 1.35; }
+.architecture-node.is-active { transform: scale(1.04); box-shadow: 0 0 0 3px #0f62fe, 0 8px 24px rgba(15,98,254,.18); }
+.architecture-node.is-muted { opacity: .2; }
+.edge-label { position: absolute; border: 1px solid #8d8d8d; background: #fff; padding: .35rem .55rem; font: inherit; font-size: .75rem; cursor: pointer; pointer-events: all; white-space: nowrap; }
+.edge-label:hover, .edge-label:focus, .edge-label.is-active { border-color: #0f62fe; background: #e5f6ff; outline: 2px solid #0f62fe; outline-offset: 1px; }
+.journey-player { position: absolute; z-index: 5; left: 1rem; right: 1rem; bottom: 1rem; padding: 1rem; display: grid; grid-template-columns: minmax(16rem, .8fr) minmax(26rem, 1.5fr) minmax(18rem, .8fr); gap: 1.25rem; align-items: center; background: rgba(22,22,22,.97); color: #fff; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+.journey-player h2, .journey-player h3 { margin: .25rem 0 .5rem; }
+.journey-player p { margin: 0 0 .5rem; }
+.step-card { border-left: 4px solid #0f62fe; padding-left: 1rem; }
+.journey-controls, .tag-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.journey-card { border-top: 1px solid #c6c6c6; padding: 1rem 0; }
+@media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .canvas-wrap { height: 72vh; } .journey-player { grid-template-columns: 1fr; max-height: 45vh; overflow: auto; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }

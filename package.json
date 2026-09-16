@@ -1,0 +1,26 @@
+{
+  "name": "automation-platform-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@carbon/icons-react": "^11.66.0",
+    "@carbon/react": "^1.94.0",
+    "@xyflow/react": "^12.9.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.2",
+    "sass": "^1.92.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
